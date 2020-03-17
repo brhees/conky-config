@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+ 
+if [[ $(ps ax | grep openconnect | grep $1 | wc -l) -eq $2 ]]; then
+  echo "Up"
+else
+  echo "Down"
+fi
